@@ -946,7 +946,7 @@
         </div>
       </section>
 
-      <section class="price__area pt-60 pb-130">
+      <section id="pricing" class="price__area pt-60 pb-130">
         <div class="container">
           <div class="row">
             <div class="col-xxl-4 offset-xxl-4">
@@ -967,11 +967,12 @@
               <div class="price__tab-btn text-center mb-50">
                 <nav>
                   <div
+                    class="nav nav-tabs justify-content-center"
                     id="nav-tab"
                     role="tablist"
-                    class="nav nav-tabs justify-content-center"
                   >
                     <button
+                      class="nav-link"
                       id="nav-monthly-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-monthly"
@@ -979,11 +980,11 @@
                       role="tab"
                       aria-controls="nav-monthly"
                       aria-selected="true"
-                      class="nav-link"
                     >
                       monthly plan
                     </button>
                     <button
+                      class="nav-link active"
                       id="nav-annually-tab"
                       data-bs-toggle="tab"
                       data-bs-target="#nav-annually"
@@ -991,7 +992,6 @@
                       role="tab"
                       aria-controls="nav-annually"
                       aria-selected="false"
-                      class="nav-link active"
                     >
                       Annual Plan
                     </button>
@@ -1005,12 +1005,12 @@
               class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
             >
               <div class="price__tab-content">
-                <div id="nav-tabContent" class="tab-content">
+                <div class="tab-content" id="nav-tabContent">
                   <div
+                    class="tab-pane fade"
                     id="nav-monthly"
                     role="tabpanel"
                     aria-labelledby="nav-monthly-tab"
-                    class="tab-pane fade"
                   >
                     <div class="row">
                       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -1037,7 +1037,7 @@
                               </li>
                             </ul>
                           </div>
-                          <a class="e-btn e-btn-4" href="/contact"
+                          <a href="contact.html" class="e-btn e-btn-4"
                             >Get Started</a
                           >
                         </div>
@@ -1072,7 +1072,7 @@
                               </li>
                             </ul>
                           </div>
-                          <a class="e-btn e-btn-border" href="/contact"
+                          <a href="contact.html" class="e-btn e-btn-border"
                             >Get Started</a
                           >
                         </div>
@@ -1080,10 +1080,10 @@
                     </div>
                   </div>
                   <div
+                    class="tab-pane fade show active"
                     id="nav-annually"
                     role="tabpanel"
                     aria-labelledby="nav-annually-tab"
-                    class="tab-pane fade show active"
                   >
                     <div class="row">
                       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -1110,7 +1110,9 @@
                               </li>
                             </ul>
                           </div>
-                          <a class="e-btn e-btn-4" href="#">Get Started</a>
+                          <a href="contact.html" class="e-btn e-btn-4"
+                            >Get Started</a
+                          >
                         </div>
                       </div>
                       <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
@@ -1143,7 +1145,7 @@
                               </li>
                             </ul>
                           </div>
-                          <a class="e-btn e-btn-border" href="/contact"
+                          <a href="contact.html" class="e-btn e-btn-border"
                             >Get Started</a
                           >
                         </div>

@@ -1117,3 +1117,168 @@ section .course_card_footer {
 .z-index-1 {
   z-index: 1;
 }
+
+/* price*/
+
+#pricing .price__item {
+  padding: 45px 50px;
+  padding-bottom: 60px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+#pricing .price__head h3 {
+  font-size: 26px;
+  margin-bottom: 5px;
+}
+#pricing .price__head p {
+  color: #53545b;
+  margin-bottom: 17px;
+}
+#pricing .price__tag {
+  padding-bottom: 13px;
+  border-bottom: 1px solid #e0e3ed;
+}
+#pricing .price__tag h4 {
+  font-size: 50px;
+  margin-bottom: 0;
+}
+#pricing .price__tag h4 span {
+  font-size: 16px;
+  font-weight: 400;
+}
+#pricing .price__offer {
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  z-index: 1;
+}
+@media (max-width: 575px) {
+  #pricing .price__offer {
+    right: 0;
+  }
+}
+#pricing .price__offer span {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  color: #ffffff;
+  background: #f2277e;
+  padding: 0 10px;
+  -webkit-border-radius: 4px 4px 0px 4px;
+  -moz-border-radius: 4px 4px 0px 4px;
+  border-radius: 4px 4px 0px 4px;
+  position: relative;
+}
+@media (max-width: 575px) {
+  #pricing .price__offer span {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+  }
+}
+#pricing .price__offer span::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-left: 15px solid #960443;
+  border-top: 0px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+@media (max-width: 575px) {
+  #pricing .price__offer span::after {
+    display: none;
+  }
+}
+#pricing .price__features ul li {
+  font-size: 16px;
+  font-weight: 500;
+  color: #0e1133;
+  position: relative;
+  padding-left: 30px;
+}
+#pricing .price__features ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+#pricing .price__features ul li i {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  display: inline-block;
+  color: #30a820;
+  font-size: 8px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(48, 168, 32, 0.1);
+}
+#pricing .price__features ul li:hover {
+  color: #30a820;
+}
+#pricing .price__features ul li:hover i {
+  background: #30a820;
+  color: #ffffff;
+}
+#pricing .price__tab-btn .nav-tabs {
+  border: none;
+}
+#pricing .price__tab-btn .nav-tabs .nav-link {
+  background: transparent;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #121317;
+  font-weight: 500;
+  height: 36px;
+  line-height: 34px;
+  border: 2px solid #edeef3;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+#pricing .price__tab-btn .nav-tabs .nav-link:first-child {
+  border-right: 0;
+  -webkit-border-radius: 4px 0 0 4px;
+  -moz-border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
+}
+#pricing .price__tab-btn .nav-tabs .nav-link:last-child {
+  border-left: 0;
+  -webkit-border-radius: 0px 4px 4px 0px;
+  -moz-border-radius: 0px 4px 4px 0px;
+  border-radius: 0px 4px 4px 0px;
+}
+#pricing .price__tab-btn .nav-tabs .nav-link.active {
+  background: #2b4eff;
+  color: #ffffff;
+  border-color: #2b4eff;
+}
+.grey-bg {
+  background: #f3f4f8;
+}
+.e-btn-4 {
+  height: 46px;
+  line-height: 44px;
+  border: 2px solid #2b4eff;
+  background: #2b4eff;
+  color: #ffffff;
+}
+.e-btn {
+  display: inline-block;
+
+  text-align: center;
+  padding: 0 25px;
+
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
