@@ -19,6 +19,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" />
   </head>
   <body>
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 39.8738;
+          "
+        ></path>
+      </svg>
+    </div>
     <!-- Start of header -->
     <header>
       <div class="container-fluid">
@@ -121,6 +138,8 @@
     </header>
     <div class="overlay position-fixed"></div>
     <!-- End of header -->
+
+    <!--Start of main-->
     <main>
       <section id="banner-area" class="banner position-relative">
         <div class="banner_custom_shape">
@@ -406,6 +425,526 @@
           </div>
         </div>
       </section>
+      <section
+        id="course-category"
+        class="course_categories py position-relative"
+      >
+        <div class="container">
+          <div class="row mb">
+            <div class="col-lg-5">
+              <article class="article">
+                <h3>
+                  Find the Right<br />Online
+                  <span class="yellow-shape position-relative">
+                    Course
+                    <img
+                      class="yellowbg position-absolute"
+                      src="./assets/images/yellow-bg.png"
+                      alt="yellow"
+                    />
+                  </span>
+                  for you
+                </h3>
+                <p>
+                  You don't have to struggle alone, you've got our assistance
+                  and help.
+                </p>
+              </article>
+            </div>
+            <div
+              class="col-lg-7 d-flex align-items-end justify-content-end column"
+            >
+              <ul class="course_categoties_filter_menu d-flex pb-3">
+                <li
+                  data-filter="all"
+                  class="filter_item position-relative active"
+                >
+                  See All
+                  <span class="position-absolute">New</span>
+                </li>
+                <li data-filter="trending" class="filter_item">Trending</li>
+                <li data-filter="popularity" class="filter_item">Popularity</li>
+                <li data-filter="featured" class="filter_item">Featured</li>
+                <li data-filter="art_design" class="filter_item">
+                  Art &amp; Design
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card trending popularity art_design shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img src="./assets/images/course11.jpg" alt="image one" />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>Art &amp; Design</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      10 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 4.50
+                      <span class="rating_count">(9)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#"
+                      >Become a product Manager learn the skills &amp; job.</a
+                    >
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-1.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Jim Séchen</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <del class="del">$45.00</del>
+                    <span class="current_amount">$36.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card popularity featured art_design shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img src="./assets/images/course-2-1.jpg" alt="image one" />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>Mechanical</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      8 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 4.50
+                      <span class="rating_count">(2)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#">Fundamentals of music theory Learn new</a>
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-2.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Barry Tone</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <del class="del">$25.00</del>
+                    <span class="current_amount">$19.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card marketing featured art_design shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img src="./assets/images/course-3.jpg" alt="image one" />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>Development</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      12 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 4.00
+                      <span class="rating_count">(2)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#">Strategy law and organization Foundation</a>
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-3.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Elon Gated</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <del class="del">$39.00</del>
+                    <span class="current_amount">$30.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card popularity featured shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img
+                      src="./assets/images/course-6-1.jpg"
+                      alt="image four"
+                    />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>UX Design</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      10 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 4.50
+                      <span class="rating_count">(2)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#">Creative writing through Storytelling</a>
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-6.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Shahnewaz Sakil</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <del class="del">$45.00</del>
+                    <span class="current_amount">$36.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card trending featured art_design shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img src="./assets/images/course-4-1.jpg" alt="image one" />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>Marketing</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      5 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 5.2
+                      <span class="rating_count">(2)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#"
+                      >The business Intelligence analyst Course 2022</a
+                    >
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-4.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Eleanor Fant</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <span class="current_amount">$52.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="col-lg-4 col-md-6 col-sm-12 mb-4 course_card trending popularity art_design shown"
+            >
+              <div class="course_card_item">
+                <div class="course_card_header position-relative">
+                  <a href="#">
+                    <img src="./assets/images/course-5-1.jpg" alt="image one" />
+                  </a>
+                  <div class="course_tag position-absolute">
+                    <span>Audio &amp; Music</span>
+                  </div>
+                </div>
+                <div class="course_card_body">
+                  <div
+                    class="course_lesson_and_rating d-flex justify-content-between"
+                  >
+                    <span>
+                      <i class="fas fa-book"></i>
+                      4 Lesson
+                    </span>
+                    <span>
+                      <i class="fas fa-star"></i> 5.00
+                      <span class="rating_count">(2)</span>
+                    </span>
+                  </div>
+                  <h3 class="course_name">
+                    <a href="#">Build your media and Public presence</a>
+                  </h3>
+                  <div class="course_instructor d-flex align-items-center">
+                    <figure class="instructor_img">
+                      <img
+                        src="./assets/images/teacher-5.jpg"
+                        alt="instructor img"
+                      />
+                    </figure>
+                    <span class="instructor_name"
+                      ><a href="#">Eleanor Fant</a></span
+                    >
+                  </div>
+                </div>
+                <div class="course_card_footer d-flex justify-content-between">
+                  <span class="pricing">
+                    <span class="current_amount">$25.00</span>
+                  </span>
+                  <a href="#" class="view_all position-relative">
+                    Know Details
+                    <i class="fas fa-arrow-right"></i>
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="events" class="events__area pt-115 pb-120 p-relative">
+        <div class="events__shape">
+          <img
+            class="events-1-shape"
+            src="./assets/images/events-shape.png"
+            alt=""
+          />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-4 offset-xxl-4">
+              <div class="section__title-wrapper mb-60 text-center">
+                <h2 class="section__title">
+                  Current
+                  <span class="yellow-bg yellow-bg-big"
+                    >Events<img src="./assets/images/yellow-bg.png" alt=""
+                  /></span>
+                </h2>
+                <p>We found 13 events available for you.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
+            >
+              <div class="events__item mb-10 hover__active active">
+                <div
+                  class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg"
+                >
+                  <div class="events__content">
+                    <div class="events__meta">
+                      <span>Jun 14, 2022</span>
+                      <span>12:00 am - 2:30 pm</span>
+                      <span>New York</span>
+                    </div>
+                    <h3 class="events__title">
+                      <a href="event-details.html"
+                        >Digital transformation conference</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="events__more">
+                    <a href="event-details.html" class="link-btn">
+                      View More
+                      <i class="fa fa-arrow-right"></i>
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
+            >
+              <div class="events__item mb-10 hover__active">
+                <div
+                  class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg"
+                >
+                  <div class="events__content">
+                    <div class="events__meta">
+                      <span>April 10, 2022</span>
+                      <span>9:00 am - 5:00 pm</span>
+                      <span>Mindahan</span>
+                    </div>
+                    <h3 class="events__title">
+                      <a href="event-details.html"
+                        >World education day conference</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="events__more">
+                    <a href="event-details.html" class="link-btn">
+                      View More
+                      <i class="fa fa-arrow-right"></i>
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
+            >
+              <div class="events__item mb-10 hover__active">
+                <div
+                  class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg"
+                >
+                  <div class="events__content">
+                    <div class="events__meta">
+                      <span>July 16, 2022</span>
+                      <span>10:30 am - 1:30 pm</span>
+                      <span>Weedpatch</span>
+                    </div>
+                    <h3 class="events__title">
+                      <a href="event-details.html"
+                        >Foundations of global health</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="events__more">
+                    <a href="event-details.html" class="link-btn">
+                      View More
+                      <i class="fa fa-arrow-right"></i>
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
+            >
+              <div class="events__item mb-10 hover__active">
+                <div
+                  class="events__item-inner d-sm-flex align-items-center justify-content-between white-bg"
+                >
+                  <div class="events__content">
+                    <div class="events__meta">
+                      <span>March 24, 2022</span>
+                      <span>10:30 am - 12:00 pm</span>
+                      <span>Lnland</span>
+                    </div>
+                    <h3 class="events__title">
+                      <a href="event-details.html"
+                        >Business creativity workshops</a
+                      >
+                    </h3>
+                  </div>
+                  <div class="events__more">
+                    <a href="event-details.html" class="link-btn">
+                      View More
+                      <i class="fa fa-arrow-right"></i>
+                      <i class="fa fa-arrow-right"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="price__area pt-60 pb-130">
         <div class="container">
@@ -644,6 +1183,9 @@
         </div>
       </section>
     </main>
+    <!--End of main-->
+
+    <!--Start of main-->
 
     <footer class="footer__area footer-bg">
       <div class="footer__top pt-190 pb-40">
@@ -764,6 +1306,7 @@
         </div>
       </div>
     </footer>
+    <!--End of main-->
 
     <script src="./assets/js/script.js"></script>
   </body>
