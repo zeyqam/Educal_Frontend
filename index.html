@@ -17,743 +17,633 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <style type="text/css">
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCRc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-          U+A640-A69F, U+FE2E-FE2F;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fABc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCBc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+1F00-1FFF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBxc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0370-03FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fCxc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fChc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 300;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4AMP6lQ.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu72xKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-          U+A640-A69F, U+FE2E-FE2F;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu5mxKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7mxKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+1F00-1FFF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4WxKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+0370-03FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7WxKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu7GxKKTU1Kvnz.woff2)
-          format("woff2");
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 400;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxKKTU1Kg.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCRc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
-          U+A640-A69F, U+FE2E-FE2F;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fABc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCBc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+1F00-1FFF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBxc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0370-03FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fCxc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
-          U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fChc4AMP6lbBP.woff2)
-          format("woff2");
-        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
-          U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-      }
-      @font-face {
-        font-family: "Roboto";
-        font-style: normal;
-        font-weight: 500;
-        font-display: swap;
-        src: url(https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4AMP6lQ.woff2)
-          format("woff2");
-        unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
-          U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
-          U+2212, U+2215, U+FEFF, U+FFFD;
-      }
-    </style>
-    <style type="text/css">
-      @font-face {
-        font-family: "Material Icons";
-        font-style: normal;
-        font-weight: 400;
-        src: url(https://fonts.gstatic.com/s/materialicons/v139/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
-          format("woff2");
-      }
-      .material-icons {
-        font-family: "Material Icons";
-        font-weight: normal;
-        font-style: normal;
-        font-size: 24px;
-        line-height: 1;
-        letter-spacing: normal;
-        text-transform: none;
-        display: inline-block;
-        white-space: nowrap;
-        word-wrap: normal;
-        direction: ltr;
-        -webkit-font-feature-settings: "liga";
-        -webkit-font-smoothing: antialiased;
-      }
-    </style>
-    <style>
-      .mat-tab-header {
-        display: flex;
-        overflow: hidden;
-        position: relative;
-        flex-shrink: 0;
-      }
-      .mat-tab-header-pagination {
-        -webkit-user-select: none;
-        user-select: none;
-        position: relative;
-        display: none;
-        justify-content: center;
-        align-items: center;
-        min-width: 32px;
-        cursor: pointer;
-        z-index: 2;
-        -webkit-tap-highlight-color: transparent;
-        touch-action: none;
-        box-sizing: content-box;
-        background: none;
-        border: none;
-        outline: 0;
-        padding: 0;
-      }
-      .mat-tab-header-pagination::-moz-focus-inner {
-        border: 0;
-      }
-      .mat-tab-header-pagination-controls-enabled .mat-tab-header-pagination {
-        display: flex;
-      }
-      .mat-tab-header-pagination-before,
-      .mat-tab-header-rtl .mat-tab-header-pagination-after {
-        padding-left: 4px;
-      }
-      .mat-tab-header-pagination-before .mat-tab-header-pagination-chevron,
-      .mat-tab-header-rtl
-        .mat-tab-header-pagination-after
-        .mat-tab-header-pagination-chevron {
-        transform: rotate(-135deg);
-      }
-      .mat-tab-header-rtl .mat-tab-header-pagination-before,
-      .mat-tab-header-pagination-after {
-        padding-right: 4px;
-      }
-      .mat-tab-header-rtl
-        .mat-tab-header-pagination-before
-        .mat-tab-header-pagination-chevron,
-      .mat-tab-header-pagination-after .mat-tab-header-pagination-chevron {
-        transform: rotate(45deg);
-      }
-      .mat-tab-header-pagination-chevron {
-        border-style: solid;
-        border-width: 2px 2px 0 0;
-        height: 8px;
-        width: 8px;
-      }
-      .mat-tab-header-pagination-disabled {
-        box-shadow: none;
-        cursor: default;
-      }
-      .mat-tab-list {
-        flex-grow: 1;
-        position: relative;
-        transition: transform 500ms cubic-bezier(0.35, 0, 0.25, 1);
-      }
-      .mat-ink-bar {
-        position: absolute;
-        bottom: 0;
-        height: 2px;
-        transition: 500ms cubic-bezier(0.35, 0, 0.25, 1);
-      }
-      ._mat-animation-noopable.mat-ink-bar {
-        transition: none;
-        animation: none;
-      }
-      .mat-tab-group-inverted-header .mat-ink-bar {
-        bottom: auto;
-        top: 0;
-      }
-      .cdk-high-contrast-active .mat-ink-bar {
-        outline: solid 2px;
-        height: 0;
-      }
-      .mat-tab-labels {
-        display: flex;
-      }
-      [mat-align-tabs="center"] > .mat-tab-header .mat-tab-labels {
-        justify-content: center;
-      }
-      [mat-align-tabs="end"] > .mat-tab-header .mat-tab-labels {
-        justify-content: flex-end;
-      }
-      .mat-tab-label-container {
-        display: flex;
-        flex-grow: 1;
-        overflow: hidden;
-        z-index: 1;
-      }
-      ._mat-animation-noopable.mat-tab-list {
-        transition: none;
-        animation: none;
-      }
-      .mat-tab-label {
-        height: 48px;
-        padding: 0 24px;
-        cursor: pointer;
-        box-sizing: border-box;
-        opacity: 0.6;
-        min-width: 160px;
-        text-align: center;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-        position: relative;
-      }
-      .mat-tab-label:focus {
-        outline: none;
-      }
-      .mat-tab-label:focus:not(.mat-tab-disabled) {
-        opacity: 1;
-      }
-      .cdk-high-contrast-active .mat-tab-label:focus {
-        outline: dotted 2px;
-        outline-offset: -2px;
-      }
-      .mat-tab-label.mat-tab-disabled {
-        cursor: default;
-      }
-      .cdk-high-contrast-active .mat-tab-label.mat-tab-disabled {
-        opacity: 0.5;
-      }
-      .mat-tab-label .mat-tab-label-content {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        white-space: nowrap;
-      }
-      .cdk-high-contrast-active .mat-tab-label {
-        opacity: 1;
-      }
-      @media (max-width: 599px) {
-        .mat-tab-label {
-          min-width: 72px;
-        }
-      }
-    </style>
-    <style>
-      .mat-tab-body-content {
-        height: 100%;
-        overflow: auto;
-      }
-      .mat-tab-group-dynamic-height .mat-tab-body-content {
-        overflow: hidden;
-      }
-      .mat-tab-body-content[style*="visibility: hidden"] {
-        display: none;
-      }
-    </style>
   </head>
   <body>
+    <!-- Start of header -->
     <header>
-      <div
-        id="header-sticky "
-        class="header_area heder_transparent header_padding mt-5"
-      >
-        <div class="container-fluid">
-          <div class="row align-items-center">
-            <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
-              <div class="header_left d-flex">
-                <div class="logo">
-                  <a href="#">
-                    <img src="./assets/images/logo.png" alt="logo" />
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-2 col-sm-4 col-6">
+            <div class="header-left d-flex align-items-center">
+              <a href="#" class="logo">
+                <figure>
+                  <img src="./assets/images/logo-black.png" alt="logo" />
+                </figure>
+              </a>
+              <ul class="header-category position-relative">
+                <li class="drop_down_btn position-relative">
+                  <a href="#" class="d-flex align-items-center">
+                    <div class="header-category-icon">
+                      <img src="./assets/images/dot-menu.svg" alt="" />
+                    </div>
+                    <span>Category</span>
                   </a>
-                </div>
-                <div class="header_category d-none d-lg-block">
-                  <nav>
-                    <ul>
-                      <li>
-                        <a class="cat-menu align-items-center d-flex" href="#">
-                          <div class="cat-dot-icon d-inline-block">
-                            <svg
-                              _ngcontent-klw-c28=""
-                              viewBox="0 0 276.2 276.2"
-                            >
-                              <g _ngcontent-klw-c28="">
-                                <g _ngcontent-klw-c28="">
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M33.1,2.5C15.3,2.5,0.9,17,0.9,34.8s14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S51,2.5,33.1,2.5z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M137.7,2.5c-17.8,0-32.3,14.5-32.3,32.3s14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3S155.5,2.5,137.7,2.5    z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M243.9,67.1c17.8,0,32.3-14.5,32.3-32.3S261.7,2.5,243.9,2.5S211.6,17,211.6,34.8S226.1,67.1,243.9,67.1z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M32.3,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3S0,120.4,0,138.2S14.5,170.5,32.3,170.5z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M136.8,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3c-17.8,0-32.3,14.5-32.3,32.3    C104.5,156.1,119,170.5,136.8,170.5z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M243,170.5c17.8,0,32.3-14.5,32.3-32.3c0-17.8-14.5-32.3-32.3-32.3s-32.3,14.5-32.3,32.3    C210.7,156.1,225.2,170.5,243,170.5z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M33,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3s32.3-14.5,32.3-32.3S50.8,209.1,33,209.1z    "
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M137.6,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S155.4,209.1,137.6,209.1z"
-                                    class="cat-dot"
-                                  ></path>
-                                  <path
-                                    _ngcontent-klw-c28=""
-                                    d="M243.8,209.1c-17.8,0-32.3,14.5-32.3,32.3c0,17.8,14.5,32.3,32.3,32.3c17.8,0,32.3-14.5,32.3-32.3    S261.6,209.1,243.8,209.1z"
-                                    class="cat-dot"
-                                  ></path>
-                                </g>
-                              </g>
-                            </svg>
-                          </div>
-                          <span>Category</span>
-                        </a>
-                        <ul class="sub-menu">
-                          <li><a href="#">English Learning</a></li>
-                          <li><a href="#">Web Development</a></li>
-                          <li><a href="#">Logo Designe</a></li>
-                          <li><a href="#">Motion Graphigs</a></li>
-                          <li><a href="#">Video Edition</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
+                  <ul
+                    class="category_drop_down_menu drop_down_menu position-absolute"
+                  >
+                    <li><a href="#">English Learning</a></li>
+                    <li><a href="#">Web Development</a></li>
+                    <li><a href="#">Logo Design</a></li>
+                    <li><a href="#">Motion Graphics</a></li>
+                    <li><a href="#">Video Edition</a></li>
+                  </ul>
+                </li>
+              </ul>
             </div>
-            <div class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6">
-              <div
-                class="heade_right d-flex justify-content-end align-items-center"
-              >
-                <div class="main-menu">
-                  <nav id="mobile-menu" class="d-none d-xl-block">
-                    <ul>
-                      <li class="has-dropdown">
-                        <a href="#">"Home" </a>
-                        <ul class="submenu">
-                          <li><a href="#"> "Home Style 1"</a></li>
-                          <li><a href="#">Home Style 2 </a></li>
-                          <li><a href="#">Home Style 3</a></li>
-                        </ul>
-                      </li>
-                      <li class="has-dropdown"><a href="#">Courses</a></li>
-                      <li class="has-dropdown"></li>
-                      <li class="has-dropdown"></li>
-                      <li></li>
+          </div>
+          <div
+            class="col-xxl-9 col-xl-9 col-lg-8 col-md-10 col-sm-8 col-6 me-0 column"
+          >
+            <div
+              class="header-right d-flex align-items-center justify-content-around"
+            >
+              <nav class="main-menu">
+                <ul class="d-flex align-items-center justify-content-evenly">
+                  <li title="Home" class="drop_down_btn position-relative">
+                    <a href="#"
+                      >Home <span><i class="fas fa-chevron-down"></i></span
+                    ></a>
+                    <ul class="drop_down_menu position-absolute">
+                      <li title="Home 01"><a href="#">Home 01</a></li>
+                      <li title="Home 02"><a href="#">Home 02</a></li>
+                      <li title="Home 03"><a href="#">Home 03</a></li>
                     </ul>
-                  </nav>
-                </div>
+                  </li>
+                  <li title="Courses" class="drop_down_btn position-relative">
+                    <a href="./courses.html"
+                      >Courses <span><i class="fas fa-chevron-down"></i></span
+                    ></a>
+                  </li>
+                  <li title="Blog" class="drop_down_btn position-relative">
+                    <a href="#"
+                      >Blog <span><i class="fas fa-chevron-down"></i></span
+                    ></a>
+                  </li>
+                  <li title="Pages" class="drop_down_btn position-relative">
+                    <a href="#"
+                      >Pages <span><i class="fas fa-chevron-down"></i></span
+                    ></a>
+                  </li>
+                  <li title="Contact" class="drop_down_btn position-relative">
+                    <a href="#">Contact </a>
+                  </li>
+                </ul>
+              </nav>
+              <div
+                class="form_and_btn d-flex align-items-center justify-content-between"
+              >
+                <form action="#" class="d-flex position-relative">
+                  <button type="submit"><i class="fas fa-search"></i></button>
+                  <input type="text" placeholder="Search for products..." />
+                  <a href="#" class="shopping_cart_and_label position-relative">
+                    <div class="shopping_cart_icon">
+                      <svg viewBox="0 0 24 24">
+                        <circle class="st0" cx="9" cy="21" r="1"></circle>
+                        <circle class="st0" cx="20" cy="21" r="1"></circle>
+                        <path
+                          class="st0"
+                          d="M1,1h4l2.7,13.4c0.2,1,1,1.6,2,1.6h9.7c1,0,1.8-0.7,2-1.6L23,6H6"
+                        ></path>
+                      </svg>
+                    </div>
+                    <span class="shopping_cart_label">2</span>
+                  </a>
+                </form>
+                <a href="#" class="try_free btn btn-primary">Try for free</a>
+              </div>
+              <div class="toggle-btn position-relative">
+                <span></span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </header>
-
-    <section class="price__area pt-60 pb-130">
-      <div class="container">
-        <div class="row">
-          <div class="col-xxl-4 offset-xxl-4">
-            <div class="section__title-wrapper mb-60 text-center">
-              <h2 class="section__title">
-                Simple <br />
-                All Inclusive
-                <span class="yellow-bg yellow-bg-big"
-                  >Pricing<img src="./assets/images/yellow-bg.png" alt=""
-                /></span>
-              </h2>
-              <p>No contracts. No surprise fees.</p>
-            </div>
-          </div>
+    <div class="overlay position-fixed"></div>
+    <!-- End of header -->
+    <main>
+      <section id="banner-area" class="banner position-relative">
+        <div class="banner_custom_shape">
+          <img
+            src="./assets/images/hero-1-circle.png"
+            alt="Animated Circle"
+            class="circle position-absolute"
+          />
+          <img
+            src="./assets/images/hero-1-circle-2.png"
+            alt="Semi circle"
+            class="semicircle position-absolute"
+          />
+          <img
+            src="./assets/images/hero-1-dot-2.png"
+            alt="dots"
+            class="dots position-absolute"
+          />
         </div>
-        <div class="row">
-          <div class="col-xxl-12">
-            <div class="price__tab-btn text-center mb-50">
-              <nav>
-                <div
-                  id="nav-tab"
-                  role="tablist"
-                  class="nav nav-tabs justify-content-center"
-                >
-                  <button
-                    id="nav-monthly-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-monthly"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-monthly"
-                    aria-selected="true"
-                    class="nav-link"
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="article_wrapper">
+                <article class="article">
+                  <h3>
+                    <span class="d-block">Access 2700+</span>
+                    <span class="yellow-shape position-relative">
+                      Online
+                      <img
+                        class="yellowbg position-absolute"
+                        src="./assets/images/yellow-bg.png"
+                        alt="yellow"
+                      />
+                    </span>
+                    Tutorial From Top Instructor.
+                  </h3>
+                  <p>
+                    Meet university,and cultural institutions, who'll share
+                    their experience.
+                  </p>
+                  <a href="#" class="try_free btn btn-primary"
+                    >View all course</a
                   >
-                    monthly plan
-                  </button>
-                  <button
-                    id="nav-annually-tab"
-                    data-bs-toggle="tab"
-                    data-bs-target="#nav-annually"
-                    type="button"
-                    role="tab"
-                    aria-controls="nav-annually"
-                    aria-selected="false"
-                    class="nav-link active"
-                  >
-                    Annual Plan
-                  </button>
+                </article>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="banner_thumb_wrapper position-relative d-flex">
+                <div class="banner_thumb_shapes">
+                  <img
+                    src="./assets/images/hero-1-dot.png"
+                    alt="Dot Square Shape"
+                    class="dot-square position-absolute"
+                  />
+                  <img
+                    src="./assets/images/hero-1-circle-4.png"
+                    alt="Fill Circle Shape"
+                    class="fill_circle position-absolute"
+                  />
+                  <img
+                    src="./assets/images/hero-1-circle-3.png"
+                    alt="Stroke Circle Shape"
+                    class="stroke_circle position-absolute"
+                  />
                 </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
-          >
-            <div class="price__tab-content">
-              <div id="nav-tabContent" class="tab-content">
-                <div
-                  id="nav-monthly"
-                  role="tabpanel"
-                  aria-labelledby="nav-monthly-tab"
-                  class="tab-pane fade"
-                >
-                  <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div class="price__item grey-bg mb-30 p-relative">
-                        <div class="price__head">
-                          <h3>Gold</h3>
-                          <p>Perfect for small marketing teams</p>
-                        </div>
-                        <div class="price__tag mb-25">
-                          <h4>$59<span>.99 / annually</span></h4>
-                        </div>
-                        <div class="price__features mb-40">
-                          <ul>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Course
-                              Discussions
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Content Library
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>1-hour Mentorship
-                            </li>
-                          </ul>
-                        </div>
-                        <a class="e-btn e-btn-4" href="/contact">Get Started</a>
-                      </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div class="price__item grey-bg mb-30 p-relative">
-                        <div class="price__offer"><span>Best Value</span></div>
-                        <div class="price__head">
-                          <h3>Diamond</h3>
-                          <p>Perfect for small marketing teams</p>
-                        </div>
-                        <div class="price__tag mb-25">
-                          <h4>$99<span>.99 / annually</span></h4>
-                        </div>
-                        <div class="price__features mb-40">
-                          <ul>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Course
-                              Discussions
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Content Library
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>1-hour Mentorship
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Online Course
-                            </li>
-                          </ul>
-                        </div>
-                        <a class="e-btn e-btn-border" href="/contact"
-                          >Get Started</a
-                        >
-                      </div>
-                    </div>
+                <div class="banner_thumb_big">
+                  <figure>
+                    <img src="./assets/images/hero-1.jpg" alt="Big Image" />
+                  </figure>
+                  <div class="animated_qoute position-absolute">
+                    <span>Tomorrow is our</span>
+                    <h4>“When I Grow Up” Spirit Day!</h4>
                   </div>
                 </div>
-                <div
-                  id="nav-annually"
-                  role="tabpanel"
-                  aria-labelledby="nav-annually-tab"
-                  class="tab-pane fade show active"
-                >
-                  <div class="row">
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div class="price__item grey-bg mb-30 p-relative">
-                        <div class="price__head">
-                          <h3>Gold</h3>
-                          <p>Perfect for small marketing teams</p>
-                        </div>
-                        <div class="price__tag mb-25">
-                          <h4>$59<span>.99 / annually</span></h4>
-                        </div>
-                        <div class="price__features mb-40">
-                          <ul>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Course
-                              Discussions
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Content Library
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>1-hour Mentorship
-                            </li>
-                          </ul>
-                        </div>
-                        <a class="e-btn e-btn-4" href="#">Get Started</a>
-                      </div>
-                    </div>
-                    <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
-                      <div class="price__item grey-bg mb-30 p-relative">
-                        <div class="price__offer"><span>Best Value</span></div>
-                        <div class="price__head">
-                          <h3>Diamond</h3>
-                          <p>Perfect for small marketing teams</p>
-                        </div>
-                        <div class="price__tag mb-25">
-                          <h4>$99<span>.99 / annually</span></h4>
-                        </div>
-                        <div class="price__features mb-40">
-                          <ul>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Course
-                              Discussions
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Content Library
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>1-hour Mentorship
-                            </li>
-                            <li>
-                              <i class="fa-solid fa-check"></i>Online Course
-                            </li>
-                          </ul>
-                        </div>
-                        <a class="e-btn e-btn-border" href="/contact"
-                          >Get Started</a
-                        >
-                      </div>
-                    </div>
-                  </div>
+                <div class="banner_thumb_sm">
+                  <figure>
+                    <img
+                      src="./assets/images/hero-sm-1.jpg"
+                      alt="Small Image"
+                    />
+                  </figure>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="cta__area mb--120">
-      <div class="container">
-        <div class="cta__inner blue-bg fix">
-          <div class="cta__shape">
-            <img src="./assets/images/cta-shape.png" alt="" />
+      </section>
+      <section id="course-area" class="course py position-relative">
+        <div class="container">
+          <div class="row justify-content-between align-items-center mb">
+            <article class="article w-50">
+              <h3>
+                <span class="d-block">Explore</span> Our
+                <span class="yellow-shape position-relative">
+                  Popular
+                  <img
+                    class="yellowbg position-absolute"
+                    src="./assets/images/yellow-bg.png"
+                    alt="yellow"
+                  />
+                </span>
+                Courses
+              </h3>
+            </article>
+            <a href="#" class="view_all position-relative">
+              View all category
+              <i class="fas fa-arrow-right"></i>
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
-          <div class="row align-items-center">
-            <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-8">
-              <div class="cta__content">
-                <h3 class="cta__title">
-                  You can be your own Guiding star with our help
-                </h3>
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/tablet.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Data Science</h4>
+                    <p>Data is Everything</p>
+                  </div>
+                </a>
               </div>
             </div>
-            <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-4">
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/house.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Business</h4>
+                    <p>Improve your business</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/paint.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Art &amp; Design</h4>
+                    <p>Fun &amp; Challenging</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/paint.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Lifestyle</h4>
+                    <p>New Skills, New You</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/pie-chart.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Marketing</h4>
+                    <p>Improve your business</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/graph.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Finance</h4>
+                    <p>Fun &amp; Challenging</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/home.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Health &amp; Fitness</h4>
+                    <p>Invest to Your Body</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/electric-guitar.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Music</h4>
+                    <p>Major or Minor</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="course_category">
+                <a href="#">
+                  <div class="category_icon">
+                    <img src="./assets/images/compass.svg" alt="" />
+                  </div>
+                  <div class="category_content">
+                    <h4>Academics</h4>
+                    <p>High Education Level</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
               <div
-                class="cta__more d-md-flex justify-content-end p-relative z-index-1"
+                class="course_banner_item one d-flex justify-content-between align-items-center"
               >
-                <a class="e-btn e-btn-white" href="/contact">Get Started</a>
+                <div class="course_banner_content">
+                  <span>Free</span>
+                  <h3>
+                    Germany Foundation<br />
+                    Document
+                  </h3>
+                  <a href="#" class="btn btn-primary try_free">View Courses</a>
+                </div>
+                <div class="course_banner_thumb">
+                  <figure>
+                    <img
+                      src="./assets/images/banner-img-1.png"
+                      alt="Germany Foundation Course Banner"
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div
+                class="course_banner_item two d-flex justify-content-between align-items-center"
+              >
+                <div class="course_banner_content">
+                  <span>New</span>
+                  <h3>
+                    Online Courses<br />
+                    From Eduka University
+                  </h3>
+                  <a href="#" class="btn btn-primary try_free">View Courses</a>
+                </div>
+                <div class="course_banner_thumb">
+                  <figure>
+                    <img
+                      src="./assets/images/banner-img-2.png"
+                      alt="Eduka University Course Banner"
+                    />
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="price__area pt-60 pb-130">
+        <div class="container">
+          <div class="row">
+            <div class="col-xxl-4 offset-xxl-4">
+              <div class="section__title-wrapper mb-60 text-center">
+                <h2 class="section__title">
+                  Simple <br />
+                  All Inclusive
+                  <span class="yellow-bg yellow-bg-big"
+                    >Pricing<img src="./assets/images/yellow-bg.png" alt=""
+                  /></span>
+                </h2>
+                <p>No contracts. No surprise fees.</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xxl-12">
+              <div class="price__tab-btn text-center mb-50">
+                <nav>
+                  <div
+                    id="nav-tab"
+                    role="tablist"
+                    class="nav nav-tabs justify-content-center"
+                  >
+                    <button
+                      id="nav-monthly-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-monthly"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-monthly"
+                      aria-selected="true"
+                      class="nav-link"
+                    >
+                      monthly plan
+                    </button>
+                    <button
+                      id="nav-annually-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-annually"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-annually"
+                      aria-selected="false"
+                      class="nav-link active"
+                    >
+                      Annual Plan
+                    </button>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-xxl-10 offset-xxl-1 col-xl-10 offset-xl-1 col-lg-10 offset-lg-1"
+            >
+              <div class="price__tab-content">
+                <div id="nav-tabContent" class="tab-content">
+                  <div
+                    id="nav-monthly"
+                    role="tabpanel"
+                    aria-labelledby="nav-monthly-tab"
+                    class="tab-pane fade"
+                  >
+                    <div class="row">
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <div class="price__item grey-bg mb-30 p-relative">
+                          <div class="price__head">
+                            <h3>Gold</h3>
+                            <p>Perfect for small marketing teams</p>
+                          </div>
+                          <div class="price__tag mb-25">
+                            <h4>$59<span>.99 / annually</span></h4>
+                          </div>
+                          <div class="price__features mb-40">
+                            <ul>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Course
+                                Discussions
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Content Library
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>1-hour
+                                Mentorship
+                              </li>
+                            </ul>
+                          </div>
+                          <a class="e-btn e-btn-4" href="/contact"
+                            >Get Started</a
+                          >
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <div class="price__item grey-bg mb-30 p-relative">
+                          <div class="price__offer">
+                            <span>Best Value</span>
+                          </div>
+                          <div class="price__head">
+                            <h3>Diamond</h3>
+                            <p>Perfect for small marketing teams</p>
+                          </div>
+                          <div class="price__tag mb-25">
+                            <h4>$99<span>.99 / annually</span></h4>
+                          </div>
+                          <div class="price__features mb-40">
+                            <ul>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Course
+                                Discussions
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Content Library
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>1-hour
+                                Mentorship
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Online Course
+                              </li>
+                            </ul>
+                          </div>
+                          <a class="e-btn e-btn-border" href="/contact"
+                            >Get Started</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    id="nav-annually"
+                    role="tabpanel"
+                    aria-labelledby="nav-annually-tab"
+                    class="tab-pane fade show active"
+                  >
+                    <div class="row">
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <div class="price__item grey-bg mb-30 p-relative">
+                          <div class="price__head">
+                            <h3>Gold</h3>
+                            <p>Perfect for small marketing teams</p>
+                          </div>
+                          <div class="price__tag mb-25">
+                            <h4>$59<span>.99 / annually</span></h4>
+                          </div>
+                          <div class="price__features mb-40">
+                            <ul>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Course
+                                Discussions
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Content Library
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>1-hour
+                                Mentorship
+                              </li>
+                            </ul>
+                          </div>
+                          <a class="e-btn e-btn-4" href="#">Get Started</a>
+                        </div>
+                      </div>
+                      <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6">
+                        <div class="price__item grey-bg mb-30 p-relative">
+                          <div class="price__offer">
+                            <span>Best Value</span>
+                          </div>
+                          <div class="price__head">
+                            <h3>Diamond</h3>
+                            <p>Perfect for small marketing teams</p>
+                          </div>
+                          <div class="price__tag mb-25">
+                            <h4>$99<span>.99 / annually</span></h4>
+                          </div>
+                          <div class="price__features mb-40">
+                            <ul>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Course
+                                Discussions
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Content Library
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>1-hour
+                                Mentorship
+                              </li>
+                              <li>
+                                <i class="fa-solid fa-check"></i>Online Course
+                              </li>
+                            </ul>
+                          </div>
+                          <a class="e-btn e-btn-border" href="/contact"
+                            >Get Started</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta__area mb--120">
+        <div class="container">
+          <div class="cta__inner blue-bg fix">
+            <div class="cta__shape">
+              <img src="./assets/images/cta-shape.png" alt="" />
+            </div>
+            <div class="row align-items-center">
+              <div class="col-xxl-7 col-xl-7 col-lg-8 col-md-8">
+                <div class="cta__content">
+                  <h3 class="cta__title">
+                    You can be your own Guiding star with our help
+                  </h3>
+                </div>
+              </div>
+              <div class="col-xxl-5 col-xl-5 col-lg-4 col-md-4">
+                <div
+                  class="cta__more d-md-flex justify-content-end p-relative z-index-1"
+                >
+                  <a class="e-btn e-btn-white" href="/contact">Get Started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer class="footer__area footer-bg">
       <div class="footer__top pt-190 pb-40">
