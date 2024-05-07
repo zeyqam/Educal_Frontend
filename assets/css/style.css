@@ -100,7 +100,7 @@ article.article h3 span .yellowbg {
 /* header */
 header {
   position: fixed;
-  background-color: #ffffff;
+
   top: 0px;
   left: 0px;
   width: 100%;
@@ -809,7 +809,7 @@ section .course_card_footer {
 #events .link-btn {
   position: relative;
   font-size: 16px;
-  color: #6d6e75;
+
   font-weight: 500;
   padding-right: 21px;
   display: inline-block;
@@ -820,6 +820,19 @@ section .course_card_footer {
 #events .events__more .link-btn {
   color: #0e1133;
 }
+#events .link-btn i:first-child {
+  right: 10%;
+  visibility: hidden;
+  opacity: 0;
+}
+#events .link-btn i {
+  font-size: 14px;
+  position: absolute;
+  top: 12px;
+
+  transform: translateY(-50%);
+}
+
 #events .p-relative {
   position: relative;
 }
@@ -833,16 +846,24 @@ section .course_card_footer {
 #events .events__item::after {
   position: absolute;
   content: "";
-  top: auto;
-  bottom: 0;
+
   left: -3px;
   width: 10%;
-  height: 0%;
+
   background: #2b4eff;
 
   border-radius: 6px;
   z-index: -1;
 }
+.events__item.active::after {
+  top: 0;
+  bottom: auto;
+  height: 100%;
+}
+*::after {
+  transition: all 0.3s ease-out 0s;
+}
+
 /*events end*/
 .progress-wrap {
   position: fixed;
@@ -899,6 +920,17 @@ section .course_card_footer {
   transition: all 200ms linear;
 }
 /*footer*/
+
+.pb-40 {
+  padding-bottom: 40px;
+}
+
+.pt-190 {
+  padding-top: 190px;
+}
+.footer__logo img {
+  max-width: 50%;
+}
 .footer-bg {
   background: #0e1133;
 }
@@ -1091,6 +1123,11 @@ section .course_card_footer {
 .footer__copyright-2 p a {
   color: #2b4eff;
 }
+/*footer end*/
+/* cta area*/
+.mb--120 {
+  margin-bottom: -120px;
+}
 #cta .cta__inner {
   padding: 50px 100px 53px 70px;
 
@@ -1123,6 +1160,13 @@ section .course_card_footer {
   color: #0e1133;
   padding: 0 45px;
 }
+#cta .e-btn {
+  display: inline-block;
+
+  border-radius: 4px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
 .p-relative {
   position: relative;
 }
@@ -1132,6 +1176,34 @@ section .course_card_footer {
 }
 
 /* price*/
+#pricing .pb-130 {
+  padding-bottom: 130px;
+}
+#pricing .pt-60 {
+  padding-top: 60px;
+}
+#pricing .section__title-wrapper {
+  position: relative;
+  z-index: 1;
+}
+.section__title span.yellow-bg-big img {
+  bottom: -2px;
+  width: 100%;
+  left: 0px;
+
+  animation: yellowBg 3s infinite;
+}
+
+.section__title span img {
+  position: absolute;
+  left: -14px;
+
+  z-index: -1;
+}
+
+#pricing .mb-60 {
+  margin-bottom: 60px;
+}
 
 #pricing .price__item {
   padding: 45px 50px;
