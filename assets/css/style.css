@@ -1592,3 +1592,51 @@ section .course_card_footer {
     top: 0;
   }
 }
+.e-btn-border {
+  height: 46px;
+  line-height: 44px;
+  border: 2px solid #d7d9e3;
+  color: #0e1133;
+  background: transparent;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.basic-pagination ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+.basic-pagination ul li.prev a {
+  width: inherit;
+  height: inherit;
+  line-height: inherit;
+  border-radius: 0;
+  border: none;
+}
+.link-btn.link-prev {
+  padding-right: 0;
+  padding-left: 21px;
+}
+.basic-pagination ul li a {
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  display: inline-block;
+
+  text-align: center;
+
+  font-weight: 500;
+  font-size: 16px;
+
+  color: #0e1133;
+}
+.basic-pagination ul li {
+  display: inline-block;
+  margin-right: 20px;
+}

@@ -590,6 +590,26 @@ header .toggle-btn {
 
 /* course area*/
 
+.pb-120 {
+  padding-bottom: 120px;
+}
+
+.pt-120 {
+  padding-top: 120px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.course__tab-inner {
+  padding: 15px 20px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.grey-bg-2 {
+  background: #edeef3;
+}
 .course__item {
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
@@ -1066,8 +1086,7 @@ header .toggle-btn {
 }
 .course__tab-inner {
   padding: 15px 20px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
+
   border-radius: 4px;
 }
 .course__tab-btn .nav-tabs {
